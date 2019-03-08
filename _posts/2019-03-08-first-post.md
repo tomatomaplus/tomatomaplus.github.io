@@ -1,22 +1,19 @@
 ---
-title: "Welcome to Jekyll!"
-date: 2017-10-20 08:26:28 -0400
-categories: jekyll update
+title: "[유통기한 관리 프로젝트] User flow, 레이아웃 작업"
+date: 2019-03-08 17:40:00 -0400
+categories: Project
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+<figure>
+	<a href="/assets/images/20190308_postImage.jpg" class="image-popup"><img src="/assets/images/20190308_postImage.jpg"></a>
+	<figcaption>project image</figcaption>
+</figure>
 
-Jekyll also offers powerful support for code snippets:
+2019년 3월 첫째주.
+생각해두었던 앱을 어떤 기능을 넣을것인지, 화면을 어떻게 구현할 것인지 정리.
+프로토타입으로 간단히 디자인된 상태. 후에 손볼예정.
 
-​```python
-def print_hi(name):
-  print("hello", name)
-print_hi('Tom')
-​```
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+다음 작업:
+깃 저장소 설정
+프로젝트 설정
+디비 설정
