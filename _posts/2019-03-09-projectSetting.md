@@ -4,10 +4,7 @@ date: 2019-03-09 19:00:00 -0400
 categories: Project
 ---
 
-<figure>
-        <a href="/assets/images/20190309_postImage.png" class="image-popup"><img src="/assets/images/20190309_postImage.png"></a>
-        <figcaption>project image</figcaption>
-</figure>
+
 
 프로젝트 구성함.
 cocoaPod 으로 사용할 라이브러리 설치
