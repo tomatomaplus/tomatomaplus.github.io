@@ -10,6 +10,6 @@ cocoaPod 으로 사용할 라이브러리 설치
 
 
 Next Step:
-realm DB Test Code
-Model definition
-custom tabbar
+1. realm DB Test Code
+2. Model definition
+3. custom tabbar
