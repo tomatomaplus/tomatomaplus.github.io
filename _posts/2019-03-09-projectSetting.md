@@ -1,10 +1,8 @@
 ---
-title: "[유통기한 관리 프로젝트] User flow, 레이아웃 작업"
+title: "[iOS유통기한 관리 프로젝트] Project Setting"
 date: 2019-03-09 19:00:00 -0400
 categories: Project
 ---
-
-
 
 프로젝트 구성함.
 cocoaPod 으로 사용할 라이브러리 설치
