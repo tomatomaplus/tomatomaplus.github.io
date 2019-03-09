@@ -1,5 +1,5 @@
 ---
-title: "[유통기한 관리 프로젝트] User flow, 레이아웃 작업"
+title: "[iOS유통기한 관리 프로젝트] User flow, 레이아웃 작업"
 date: 2019-03-08 17:40:00 -0400
 categories: Project
 ---
