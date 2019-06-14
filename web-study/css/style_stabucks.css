@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-color:#e0e0e0;}
+#wrap{
+	min-width:320px;}
+#header{
+	height:50px;
+	background-color:#fff;}
+.logo{
+	margin-left:9px;}
+.logo a{
+	display:block; width:50px; height:50px;
+	text-indent:-9999px;
+	background-image:url(../images/logo.gif);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:38px;}
+	/*
+	{background:색상 경로 반복 위치/사이즈;}
+	{background:url(../img/logo.gif) no-repeat center/38px;}   	*/
+
+
+.openMenu{
+	position:absolute; top:0; right:8px;}
+.openMenu a{
+	display:block; width:36px; height:50px;
+	text-indent:-9999px;
+	background-image:url(../images/icon_menu.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:22px auto;}
+.openSearch{
+	position:absolute; top:0; right:47px;}
+.openSearch a{
+	display:block; width:36px; height:50px;
+	text-indent:-9999px;
+	background-image:url(../images/icon_sc.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:22px auto;}
+
+.mainVisual img{
+	width:100%; height:auto;}
+.mainBox{
+	margin-top:10px; padding-top:20px; padding-bottom:20px;
+	background-color:#fff;}
+.mainTit{
+	margin-left:12px; margin-bottom:15px;
+	font-size:18px; color:#56453b;}
+	
+.newItem{
+	padding-left:6px; padding-right:6px;}
+.newItem ul:after{
+	content:""; display:block; clear:both;}
+.newItem li{
+	float:left; width:50%; 
+	padding-left:6px; padding-right:6px;
+	box-sizing:border-box;
+	margin-bottom:12px;}
+.newItem li a{
+	display:block; border:1px solid #ccc;}
+
+.newItem li .photo img{
+	width:100%; height:auto;}
+.newItem li .nameK{
+	height:20px;
+	padding-top:12px; padding-bottom:2px;
+	margin-left:10px; margin-right:10px;
+	white-space:nowrap; /*자동줄바꿈 사용하지 않음*/
+	overflow:hidden; /*현재 태그공간에서 벗어나는 내용 보이지 않기*/
+	text-overflow:ellipsis; /*말줄임표*/
+	font-size:15px; color:#222;}
+.newItem li .nameE{
+	height:20px;
+	padding-bottom:12px;
+	margin-left:10px; margin-right:10px;
+	white-space:nowrap; /*자동줄바꿈 사용하지 않음*/
+	overflow:hidden; /*현재 태그공간에서 벗어나는 내용 보이지 않기*/
+	text-overflow:ellipsis; /*말줄임표*/
+	color:#555;}
+.notice{
+	position:relative;
+	padding-left:12px; padding-right:12px;}
+.notice ul{
+	border-bottom:1px dotted #ccc;}
+
+.notice li{
+	height:20px; padding-top:5px; padding-bottom:5px;
+	border-top:1px dotted #ccc;
+	white-space:nowrap;
+	overflow:hidden; text-overflow:ellipsis;}
+.notice li a{
+	color:#333;}
+.notice .more{
+	position:absolute; right:7px; top:-36px;}
+.notice .more a{
+	display:block; width:24px; height:24px;
+	text-indent:-9999px;
+	background-image:url(../images/more.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:12px auto;}
+
