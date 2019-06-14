@@ -11,8 +11,8 @@ main:
     url: / #/collection-archive/
   - title: "Sitemap"
     url: / #/sitemap/
-  - title: "Extra Menu Item 1"
-    url: /
+  - title: "WebStudy"
+    url: /web-study/
 
 
 # documentation links
