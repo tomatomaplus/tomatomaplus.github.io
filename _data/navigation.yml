@@ -12,7 +12,7 @@ main:
   - title: "Sitemap"
     url: / #/sitemap/
   - title: "WebStudy"
-    url: /web-study/
+    url: /web-study/index.html
 
 
 # documentation links
