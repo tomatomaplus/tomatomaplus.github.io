@@ -1,0 +1,90 @@
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+* {
+  margin:0;
+  padding:0;
+}
+
+h3
+{
+  text-align: center;
+  font-size: 2em;
+  font-weight: 400;
+  color: #6B9900;
+}
+/* 내비게이션 */
+a:link, a:hover, a:visited {
+  color:#000;
+  text-decoration:none;  
+  text-align: center;
+}
+.img {
+  text-align:center;
+  display:none;
+}
+.program-list{
+  padding:20px 50px
+  font-size:1.3em;
+  margin-bottom:20px;
+  
+}
+  
+.program{
+  padding:30px;
+  box-sizing:border-box;
+  margin : 20px;
+  background-color:#fff;
+  border:1px solid #aaa;  
+}
+/* 푸터 */
+.footer {
+  padding-top:30px;
+  padding-bottom:50px;
+  background-color:#34495e;
+}
+.footer-info {
+  padding-left:20px;
+  padding-right:20px;
+}
+.contact {
+  color:#fff;
+}
+.sns {
+  margin-top:50px;
+}
+.sns a {
+  margin-right:30px;
+}
+.sns a:last-child {
+  margin-right:0;
+}
+@media screen and (min-width:764px) {
+
+.wrapper {
+  padding-top:60px;
+  padding-bottom:40px;
+  background:transparent;
+  max-width:1300px;
+    margin:0 auto;
+}
+  .program-list {
+   display:flex;
+    flex-wrap: wrap;
+}
+    .program {
+   
+    flex-basis: 30%;
+  }
+
+
+  .footer-info {
+    max-width:1300px;
+    display:flex;
+  }
+  .contact {
+    flex:2;
+  }
+  .sns {
+    flex:1;
+  }
+}
