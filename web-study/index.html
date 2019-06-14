@@ -117,9 +117,21 @@
           <a href="#"><img src="images/gp.png"></a>
         </div>
       </div>
-    </div>    
+    </div>  
+    
   </section>
-
+      $(function () { $('.program').filter(':nth-child(3n+1)').css({
+      backgroundColor: '#FAECC5',
+      color: '#664B00' 
+    });
+    
+    $('.program').filter(':nth-child(3n+2)').css({ 
+      backgroundColor: '#FFD9EC',
+      color: '#660033'
+    }); $('.program').filter(':nth-child(3n)').css({
+      backgroundColor: '#B2CCFF',
+      color: '#002266' });
+    }); 
     
 </body>
 </html>
