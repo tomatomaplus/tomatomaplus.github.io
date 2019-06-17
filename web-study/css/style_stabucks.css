@@ -102,3 +102,17 @@ body{
 	background-position:center;
 	background-size:12px auto;}
 
+	nav#sidemenu {
+		display: none;
+		position: absolute;
+		top: 50;
+		right: 0;
+		background: rgba(0, 0, 0, 0.7);
+		height: 100vh;
+		padding: 20px;
+		color: white;
+	}
+
+	nav#sidemenu a{
+		color: white;
+	}
