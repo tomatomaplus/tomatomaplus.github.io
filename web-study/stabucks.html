@@ -9,13 +9,9 @@
     <link rel="stylesheet" href="css/notosanskr.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style_stabucks.css">
-
 </head>
 <body>
-
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-
+    
     <!-- 본문이미지, 상품, 공지사항 영역 -->
     <div id="warp">
         <header id="header">
@@ -23,6 +19,13 @@
             <h1 class="logo"><a href="#">스타벅스</a></h1>
             <p class="openMenu"><a href="#">메뉴열기</a></p>
             <p class="openSearch"><a href="#">검색창열기</a></p>
+
+            <nav id="sidemenu">
+                <ul>
+                    <li><a href="#item" class="nav">신상품</a></li>
+                    <li><a href="#kj" class="nav">공지사항</a></li>
+                </ul>
+            </nav>
         </header>
         <div id="container">
             <div class="mainVisual">
@@ -96,6 +99,21 @@
         <!-- container end -->
     </div>
     <!-- warp end -->
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script>
+        $(function(){
+            var menu = $("#sidemenu");
+            menu.slideUp("fast"); // 수치값 or 문자열
+
+            $(".openMenu a").click(function(){
+                menu.slideToggle("slow");
+            });
+        });
+
+    </script>
 
 </body>
 </html>
