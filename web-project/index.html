@@ -6,63 +6,187 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 
-    
+    <script src="./css/reset.css" type="text/style"></script>
     <style>
-        * { margin: 0; padding: 0;}
-        #aurora {
-            /* width: 2000px; */
+
+@keyframes star-shooting {
+    0% {
+        -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 0;
+    }
+
+    10% {
+        -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+    }
+
+    20% {
+        -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    opacity: 0;
+
+    }
+    100% {
+        -webkit-transform: translateX(300px);
+    transform: translateX(300px);
+    opacity: 0;
+    }
+
+}
+
+@keyframes star-tail {
+    0% { width: 0; }
+    10% { width: 0; }
+    20% { width: 100px; }
+    100% { width: 0;}
+}
+
+        .stage {
             width: 100vw;
-            height: 1044px;
-            /* width: 1674px; */
-            /* height: 8292px; */
-            background: url(./images/aurora.png) no-repeat center top;
+            height: 75vw;
+            background: blue;
+
         }
 
-        /* 1920 * 1044 */
+        #title {
+            width: 100px;
+            height: 100px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: contain; /* 이미지가 잘리지 않고 꽉차게*/
+        }
+
+
+        body{
+        background:#102a46 ;
+        }
+        .layer{
+        position:absolute;
+        top:0;
+        left:0;
+        }
+
+        .shooting-stars {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            transform: rotateZ(24deg);
+        }
+
+        .star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(-45deg,#fff,rgba(0,0,255,0));
+    -webkit-filter: drop-shadow(0 0 6px #fff);
+    filter: drop-shadow(0 0 6px #fff);
+    -webkit-animation: star-tail 10s ease-in-out infinite,star-shooting 10s ease-in-out infinite;
+    animation: star-tail 10s ease-in-out infinite,star-shooting 10s ease-in-out infinite;
+}
+
+        .star:nth-child(1) {
+            margin: 0 0 0 -40%;
+            -webkit-animation-delay: .5s;
+            animation-delay: .5s;
+        }
+
+        .star:nth-child(2) {
+        margin: -400px 0 0 -10%;
+        -webkit-animation-delay: 3s;
+        animation-delay: 3s;
+    }
+
+    .star:nth-child(3) {
+    margin: -200px 0 0 10%;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.star:nth-child(4) {
+    margin: 350px 0 0 -20%;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+}
+
+        header {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            background: #04010b;
+            /* background: -webkit-linear-gradient(top,#04010b 0,#231872 100%); */
+            background: linear-gradient(to bottom,#070d14 0,#081728 100%);
+            overflow: hidden;
+            /* z-index: 5; */
+        }
+
+        header h1 {
+            position:absolute;
+            left: 0;
+            top: 0%;
+            width: 100%;
+            height: 400px;
+            opacity: 1;
+            text-align: center;
+            text-indent: -9999px;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        }
+
+        header h1 .logo {
+            position:absolute;
+            left: 0;
+            top: 50%;
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/title.png);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: auto;
+            opacity: 1;
+            -webkit-transform: translate3d(0,0,0);
+            transform: translate3d(0,0,0);
+        
+        }
+
     </style>
 </head>
 <body>
 
-    <div id="aurora"></div>
+    <header>
+        <div class="shooting-stars">
+            <i class="star"></i>
+            <i class="star"></i>    
+            <i class="star"></i>    
+        </div>
+
+        <h1>
+            Jin SuJin - font-end developer
+            <span class="logo"></span>
+        </h1>
 
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
 
-    <script src="./js/jquery-3.4.1.min.js"></script>
 
+    </header>
+    
+    
+    <!-- <div class="stage"></div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.15.0/TweenMax.min.js'></script>
+    <script src="./js/starsEffect.js"></script>
     <script>
+   
+    
 
-
-    $(function () {
-        bgSequence($('#aurora'), 8, 1044, 30); //시퀸스 갯수 -1 , 보여질 이미지 한 장의  세로 크기 , 속도
-    });
-                
-        function bgSequence(bgName, maxNum, sqSize, speed) {
-            var sqName = bgName;
-            var total = maxNum;
-            var posNum = sqSize;
-
-            var idx = 0;
-            var total = maxNum; // 전체 시퀀스
-            var posNum = sqSize; // 이동 범위
-
-            function bgAni() {
-                if (idx < total) {
-                    idx++;
-                    sqName.css({'background-position': 'center ' + (-posNum) + 'px'});
-                    posNum += sqSize;
-                } else {
-                    idx = 0;
-                    posNum = sqSize;
-                }
-
-                setTimeout(bgAni, speed);
-            }
-
-            bgAni();
-        }
 
     </script>
-    
 </body>
 </html>
