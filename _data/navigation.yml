@@ -9,10 +9,12 @@ main:
     url: /_posts/ #/year-archive/
   - title: "Collections"
     url: / #/collection-archive/
-  - title: "Sitemap"
-    url: / #/sitemap/
+  # - title: "Sitemap"
+    # url: / #/sitemap/
   - title: "WebStudy"
     url: /web-study/index.html
+  - title: "WebProject"
+    url: /web-project/index.html
 
 
 # documentation links

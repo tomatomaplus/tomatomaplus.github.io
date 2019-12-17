@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/parallax_lax.css">
+</head>
+<body>
+
+    <section class="intro">
+        <p class="scroll-text">Scroll down</p>
+    </section>
+    <section class="anim">
+        <h1 class="lax" data-lax-preset="rightToLeft-.1">Animation</h1>
+        <p class="desc lax" data-lax-preset="blurInOut">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda ullam laboriosam enim nam, hic asperiores, sapiente repellat rem ut accusantium quaerat sed sequi temporibus? Ratione officiis quos aperiam animi omnis!</p>
+        <div class="box1 lax" data-lax-preset="spin-40 fadeInOut"></div>
+        <div class="box2 lax" data-lax-scale="700 0, 500 1, 100 1, 0 0" data-lax-anchor="self"></div>
+    </section>
+    <section></section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+        window.onload = function() {
+            lax.setup() // init
+
+            const updateLax = () => {
+                lax.update(window.scrollY)
+                window.requestAnimationFrame(updateLax)
+            }
+
+            window.requestAnimationFrame(updateLax)
+        }
+    
+    </script>
+
+
+    
+</body>
+</html>
