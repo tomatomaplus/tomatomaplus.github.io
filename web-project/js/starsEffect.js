@@ -15,18 +15,18 @@ $(document).ready(function(){
     
     var contexts=[];
     
-    // function startBlinking($layer){
-    //   function blink(){
-    //     TweenMax.to($layer,0.2+(Math.random()*0.4),{
-    //       opacity:0.4+(Math.random()*0.4),
-    //       onComplete:blink,
-    //       repeat:1,
-    //       yoyo:true,
-    //       ease:Quad.easeInOut
-    //     }); 
-    //   }
-    //   blink();
-    // }
+    function startBlinking($layer){
+      function blink(){
+        TweenMax.to($layer,0.2+(Math.random()*0.4),{
+          opacity:0.4+(Math.random()*0.4),
+          onComplete:blink,
+          repeat:1,
+          yoyo:true,
+          ease:Quad.easeInOut
+        }); 
+      }
+      blink();
+    }
     
     function startBlinking($layer){
       function blink(){
